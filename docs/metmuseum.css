@@ -1,15 +1,24 @@
 @font-face {
     font-family: "Calibre";
-    src: url("/Users/yusufkerem/Documents/Visual Studio Code/fonts/Calibre.ttc");
+    src: url("fonts/Calibre.ttc");
 }
 @font-face {
     font-family: "Prata";
-    src: url("/Users/yusufkerem/Documents/Visual Studio Code/fonts/Prata-Regular.ttf");
+    src: url("fonts/Prata-Regular.ttf");
 }
 html{
     font-family: "Calibre";
     font-size: 18px;
     font-weight: light;
+}
+@media screen and (max-width: 800px) {
+    .video-banner-section{
+        height: 400px;
+    }
+    .metvideo{
+        height: 50vh;
+    }
+    
 }
 body{
     margin: 0;
@@ -28,7 +37,7 @@ header{
     display: grid;
     width: 60px;
     height: 60px;
-    margin-left: 130px;
+    margin-left: 7vw;
     margin-top: auto;
     margin-bottom: 20px;
     padding-bottom: 0px;
@@ -195,16 +204,18 @@ a, a:visited{
     position: relative;
 }
 .video-banner-section{
-    width: 1920px;
-    height: 725px;
+    width: 100vw;
+    height: 37vw;
+    min-height: 576px;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 .metvideo{
-    width: 1920px;
-    height: 1080px;
-    transform: translate(0%, -20%);
-    filter: brightness(.65);
+    width: 100vw;
+    height: 100vw;
+    min-height: 500px;
+    transform: translate(0%, -30%);
+    filter: brightness(.60);
 }
 .welcome-text{
     margin: auto;
@@ -218,8 +229,8 @@ a, a:visited{
     display: grid;
     top: 0;
     position: absolute;
-    width: 1920px;
-    height: 725px;
+    width: 100vw;
+    height: 37vw;
     z-index: 99;
 }
 .plan-button{
