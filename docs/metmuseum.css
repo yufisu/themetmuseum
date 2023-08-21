@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Calibre";
-    src: url("docs/Calibre.ttc");
+    src: url("Calibre.ttc");
 }
 @font-face {
     font-family: "Prata";
-    src: url("docs/Prata-Regular.ttf");
+    src: url("Prata-Regular.ttf");
 }
 html{
     font-family: "Calibre";
